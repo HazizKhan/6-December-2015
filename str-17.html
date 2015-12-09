@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var password = prompt("Input your password \nNote: Do not use these symbols @ ! , .");
+        var flag = "no";
+        for(var i = 0; i < password.length; i++){
+            if(password.charAt(i) === String.fromCharCode(33) || password.charAt(i) === String.fromCharCode(44) || password.charAt(i) === String.fromCharCode(46) || password.charAt(i) === String.fromCharCode(64)){
+                flag = "yes"
+            }
+        }
+        if(flag == "yes"){
+            alert("Please Enter Valid Password!");
+        }
+        else{
+            alert("Thank you!");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

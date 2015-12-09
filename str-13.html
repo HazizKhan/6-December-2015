@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var ans = prompt("Enter a keyword");
+        document.write("User Input: " + ans+ "<br>");
+        var letter1 = ans.slice(0, 1);
+        letter1 = letter1.toUpperCase();
+        var remletter = ans.slice(1);
+        remletter = remletter.toLocaleLowerCase();
+        ans = letter1 + remletter;
+        document.write("Title Case: " + ans);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

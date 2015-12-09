@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var input = prompt("enter your password \na) It should contain alphabets and numbers \nb) It should not start with a number \nc) It must at least 6 characters long");
+        var wrongPassword = "Enter valid password";
+        if(input.charAt(0) == 0 || input.charAt(0) == 1 || input.charAt(0) == 2 || input.charAt(0) == 3 || input.charAt(0) == 4 || input.charAt(0) == 5 || input.charAt(0) == 6 || input.charAt(0) == 7 || input.charAt(0) == 8 || input.charAt(0) == 9){
+            alert(wrongPassword + " It should not start with a number");
+        }
+        else if(input.length < 6){
+            alert(wrongPassword + " It must at least 6 characters long");
+        }
+        else{
+            alert("Thank you!");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
