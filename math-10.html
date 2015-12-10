@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body style="font-family: sans-serif;">
+<script>
+    var input = parseInt(prompt("Enter a number between 1 to 10"));
+    var random = Math.random();
+    random = random * 10 + 1;
+    random = Math.floor(random);
+    if(input === random){
+        alert("Congratulations Your Tukka Was Correct :P");
+    }
+    else if (input <= 0){
+        alert("Please Enter Number Between 1 to 10");
+    }
+    else if (input > 10){
+        alert("Please Enter Number Between 1 to 10");
+    }
+    else{
+        alert("Better Luck Next Time. \nThe Number Is: " + random);
+    }
+</script>
+</body>
+</html>
