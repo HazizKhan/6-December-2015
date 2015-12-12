@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>K-Electric Bill</h1>
+<script>
+    var customerName = prompt("Enter your name");
+    document.write("Customer Name: " + customerName + "<br>");
+    var months =["January", "February", "March", "April", "May", "June", "July", "August", "September", "October","November","December"];
+    var date = new Date();
+    var currentMonth = date.getMonth();
+    for(var i = 0; i < months.length; i++){
+        if(currentMonth == i){
+            document.write("Month: " +months[i] + "<br>");
+        }
+    }
+    var units = parseInt(prompt("Enter Number Of Units"));
+    document.write("Number Of Units: " + units + "<br>");
+    var charges = 14;
+    document.write("Charges Per Unit: " + charges + "<br>" + "<br>");
+    var payment = units * charges;
+    document.write("Net Amount Payable (within due date): " + payment + "<br>");
+    var surCHarge = 500;
+    document.write("Late Payment Surcharge: " + surCHarge + "<br>");
+    var paymentAfterDueDate = payment + surCHarge;
+    document.write("Net Amount Payable (After Due Date): " + paymentAfterDueDate);
+
+</script>
+</body>
+</html>
