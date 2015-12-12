@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var currentDate = new Date();
+        document.write("On Reference date: " + currentDate + "<br>");
+        currentDate = currentDate.getTime();
+        var beginningOf2015 = new Date("Jan 1, 2015").getTime();
+        var ms = currentDate - beginningOf2015;
+        var msToSec = Math.floor(ms / (1000 * 60));
+        document.write(msToSec + " seconds had passed since beginning of 2015.");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

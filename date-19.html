@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var currentDate = new Date();
+        var firstRamdan = new Date("June 18, 2015");
+        currentDate = currentDate.getTime();
+        firstRamdan = firstRamdan.getTime();
+        var days = currentDate - firstRamdan;
+        var msToDays = Math.floor(days / (1000 * 60 * 60 * 24));
+        document.write(msToDays + " days have passed since 1st Ramadan, 2015");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
