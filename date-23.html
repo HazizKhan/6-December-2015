@@ -5,8 +5,11 @@
     <title></title>
     <script>
         var current = new Date();
-        var year = current.getYear();
-        console.log(year)
+        var year = parseInt(current.getFullYear());
+        var age = parseInt(prompt("Enter YOur Age"));
+        document.write("Your Age: " + age + "<br>");
+        document.write("Your Birth Year: " + (year - age));
+
     </script>
 </head>
 <body>
